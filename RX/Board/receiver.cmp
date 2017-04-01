@@ -1,0 +1,91 @@
+Cmp-Mod V01 Created by PcbNew   date = Venerdì 24 Marzo 2017 15:18:30
+
+BeginCmp
+TimeStamp = 58D529B2
+Path = /58C7DA7A
+Reference = D1;
+ValeurCmp = STATUS_LED;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529B8
+Path = /58C7EEA4
+Reference = J1;
+ValeurCmp = CONN_SWITCH;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529C1
+Path = /58C7E0D6
+Reference = J2;
+ValeurCmp = PROG_CONN;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x05;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529C7
+Path = /58C7DD3F
+Reference = J3;
+ValeurCmp = RX_JMP;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529CD
+Path = /58C7DDF9
+Reference = J4;
+ValeurCmp = TX_JMP;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529D3
+Path = /58D527F7
+Reference = J5;
+ValeurCmp = AT_MODE_JUMP;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529DF
+Path = /58C7DADA
+Reference = R1;
+ValeurCmp = 120R;
+IdModule  = Resistors_THT:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529E5
+Path = /58D53574
+Reference = R2;
+ValeurCmp = 2k7;
+IdModule  = Resistors_THT:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529EB
+Path = /58D535C0
+Reference = R3;
+ValeurCmp = 1k;
+IdModule  = Resistors_THT:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529F2
+Path = /58C7E3E4
+Reference = RV1;
+ValeurCmp = POT;
+IdModule  = foots:Potenziometro_PIHER_10mm_diametro;
+EndCmp
+
+BeginCmp
+TimeStamp = 58D529D9
+Path = /58D52C85
+Reference = J6;
+ValeurCmp = BATT_CONN;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x02;
+EndCmp
+
+EndListe
