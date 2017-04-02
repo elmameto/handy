@@ -1,4 +1,8 @@
-use <../../lib/std.scad>
+use <std.scad>
+
+
+// YES, I WROTE IT IN ITALIAN... sorry
+
 
 // Richieste INTERNE telecomand
 min_l = 31.5;
@@ -200,7 +204,7 @@ module rotella(){
 
 module montaggio_pcb(){
 	
-	t(dxb, dyb){
+	t(dxb, dyb, s){
 		sing();
 		t(xb)
 			sing();
