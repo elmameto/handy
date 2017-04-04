@@ -1,17 +1,17 @@
 
-// DEV
-#define led2 8
-#define led1 9
-
 // PINOUT DECLARATION
-#define accel_pin           A3
-#define human_precence_pin  2
-#define self_batt_pin       A1
-#define buzz_pin            3
+  // Interface
+    #define accel_pin           A3
+    #define human_precence_pin  2
+  //Internal
+    #define self_batt_pin       A1
+    #define buzz_pin            3
+
 
 // BLUETOOTH CONFIGURATION
 #define bt_BAUD             38400
-#define comm_timeout        800
+#define data_trans_timeout  50
+#define comm_timeout        500
 #define serial_startup_time 300
 
 #define bt_throttle_min 1
@@ -97,11 +97,6 @@ void setup() {
   pinMode(accel_pin, INPUT);
   pinMode(human_precence_pin, INPUT_PULLUP);
   pinMode(self_batt_pin, INPUT);
-
-  pinMode(led1, OUTPUT);
-  pinMode(led2, OUTPUT);
-
-  digitalWrite(led1, 1);
 }
 
 void loop(){
@@ -124,11 +119,10 @@ void loop(){
     last_slow_data_update_time = millis();
   }
   
-  digitalWrite(led2, 0);
   #ifndef DEBUG
     if((millis() - last_recv) > comm_timeout){
-      digitalWrite(led2, 1);
       connection_established = false; 
+      cold_start = true;
     }
   #endif
 
@@ -229,7 +223,6 @@ void check_bt(){
                                     connection_established = true;
                                     if(!data_received)
                                       send_data(RESEND);
-                                    digitalWrite(led1, 0);
                                  //}
                                  break;
 
